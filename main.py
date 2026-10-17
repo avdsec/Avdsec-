@@ -3,7 +3,7 @@ print("FILES IN /app:", os.listdir(os.path.dirname(os.path.abspath(__file__))))
 import asyncio
 import logging
 import sys
-from utils.session_patch import patch_hydrogram_storage
+from session_patch import patch_hydrogram_storage
 
 # Globally enable multi-format session string support before any Client initializes
 patch_hydrogram_storage()
